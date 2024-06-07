@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Retro Style</title>
+</head>
+<body data-page="retro">
+    <%-include('partials/header') %>
+    <main>
+        <div class="retro">
+            <div class="title">
+                <h1 data-value="RETRO">RETRO</h1>
+            </div>
+            <div class="container1">
+                <div class="text-content1">
+                    <div class="R1 animation">
+                        <h2>Where and how was the grunge style born?</h2>
+                        <p>But where and how exactly did the grunge style come about and how does it fit into the landscape of costume and fashion? Let’s start from the origins: the musical grunge style was born in Western America, between the end of the eighties and the beginning of the nineties, as a sign of rebellion against the problems of society. In a short time it also took over street style, presenting a disillusioned and rebellious image, fleeing from the luxurious splendor typical of the 80s, to which a poorer aesthetic is preferred.</p>
+                    </div>
+                    <div class="R2 animation">
+                        <h2>What is the grunge style?</h2>
+                        <p>To really understand the grunge style it is essential to look for archival photos and videos of the artists and musical bands that represented it, thus really delving into the aesthetics of that period. Among the styles that dominated the 90s scene, just bands like Nirvana, Pearl Jam and Hole made mainstream a style made of baggy sweaters, ripped jeans and uncombed hair, becoming icons and models of grunge. Their style is only apparently “scruffy”, casual and not studied at all, and for this reason it represented a real “non-fashion”.</p>
+                    </div>
+                </div>
+                <div class="slider1 animation">
+                    <span id="slide-R1"></span>
+                    <span id="slide-R2"></span>
+                    <span id="slide-R3"></span>
+                    <div class="image-container1">
+                        <img src="images/retro2.jpg" class="slide1" width="300" height="500"/>
+                        <img src="images/retro1.jpg" class="slide1" width="300" height="500"/>
+                        <img src="images/retro3.jpg" class="slide1" width="300" height="500"/>
+                    </div>
+                    <div class="buttons1">
+                        <a href="#slide-R1"></a>
+                        <a href="#slide-R2"></a>
+                        <a href="#slide-R3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <%-include('partials/footer') %>
+    <script src="app.js"></script>
+</body>
+</html>

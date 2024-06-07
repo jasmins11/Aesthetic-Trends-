@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Grunge Style</title>
+</head>
+<body data-page="grunge">
+    <%-include('partials/header') %>
+    <main>
+        <div class="grunge">
+            <div class="title">
+                <h1 data-value="GRUNGE">Grunge</h1>
+            </div>
+            <div class="container">
+                <div class="text-content">
+                    <div class="G1 animation">
+                        <h2>Where and how was the grunge style born?</h2>
+                        <p>But where and how exactly did the grunge style come about and how does it fit into the landscape of costume and fashion? Let’s start from the origins: the musical grunge style was born in Western America, between the end of the eighties and the beginning of the nineties, as a sign of rebellion against the problems of society. In a short time it also took over street style, presenting a disillusioned and rebellious image, fleeing from the luxurious splendor typical of the 80s, to which a poorer aesthetic is preferred.</p>
+                    </div>
+                    <div class="G2 animation">
+                        <h2>What is the grunge style?</h2>
+                        <p>To really understand the grunge style it is essential to look for archival photos and videos of the artists and musical bands that represented it, thus really delving into the aesthetics of that period. Among the styles that dominated the 90s scene, just bands like Nirvana, Pearl Jam and Hole made mainstream a style made of baggy sweaters, ripped jeans and uncombed hair, becoming icons and models of grunge. Their style is only apparently “scruffy”, casual and not studied at all, and for this reason it represented a real “non-fashion”.</p>
+                    </div>
+                </div>
+                <div class="slider animation">
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+                    <span id="slide-3"></span>
+                    <div class="image-container">
+                        <img src="images/grunge1.jpg" class="slide" width="300" height="500"/>
+                        <img src="images/grunge2.jpg" class="slide" width="300" height="500"/>
+                        <img src="images/grunge3.jpg" class="slide" width="300" height="500"/>
+                    </div>
+                    <div class="buttons">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <%- include('partials/footer') %>
+   <script src="formular.js"></script>
+</body>
+</html>

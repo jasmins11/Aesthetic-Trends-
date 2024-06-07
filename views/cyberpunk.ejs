@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cyberpunk Style</title>
+</head>
+<body data-page="cyberpunk">
+    <%-include('partials/header') %>
+    <main>
+        <div class="cyberpunk">
+            <div class="title">
+                <h1 data-value="Cyberpunk">Cyberpunk</h1>
+            </div>
+            <div class="container2">
+                <div class="text-content2">
+                    <div class="C1 animation">
+                        <h2>How did cyberpunk start?</h2>
+                        <p>Cyberpunk first came to be during the 60s and 70s in the New Wave science fiction movement. Authors like Bruce Bethke, John Brunner, Harlan Ellison, Philip K. Dick, Bruce Sterling, and William Gibson are widely regarded as having launched the cyberpunk genre and cyberpunk fiction.</p>
+                    </div>
+                    <div class="C2 animation">
+                        <h2>Cyberpunk fashion</h2>
+                        <p>Since its inception, cyberpunk's distinct styles have inspired the fashion industry with the introduction of futuristic designs. A film like Blade Runner redefined black clothing, with Ridley Scott’s character Deckard and his heavy trenchcoat becoming an icon for decades to come.</p>
+                    </div>
+                </div>
+                <div class="slider2 animation">
+                    <span id="slide-C1"></span>
+                    <span id="slide-C2"></span>
+                    <span id="slide-C3"></span>
+                    <div class="image-container2">
+                        <img src="images/cyberpunk1.jpg" class="slide2" width="300" height="500"/>
+                        <img src="images/cyberpunk2.jpg" class="slide2" width="300" height="500"/>
+                        <img src="images/cyberpunk5.jpg" class="slide2" width="300" height="500"/>
+                    </div>
+                    <div class="buttons2">
+                        <a href="#slide-C1"></a>
+                        <a href="#slide-C2"></a>
+                        <a href="#slide-C3"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+   <%- include('partials/footer') %>
+   
+</body>
+</html>

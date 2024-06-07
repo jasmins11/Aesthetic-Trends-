@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+</head>
+<body data-page="formular">
+    <h2>Tell us about your opinion</h2>
+    <%-include('partials/header') %>
+
+    <div id="container">
+        <form method="post" action="Formular" target="_self">
+            <fieldset>
+                <legend>Date personale</legend>
+                <div>
+                    <label for="nume">Nume complet</label>
+                    <input type="text" id="nume" name="nume" minlength="3" maxlength="25" required>
+                </div>
+                <div>
+                    <label for="data_nasterii">Data Nasterii</label>
+                    <input type="date" id="data_nasterii" name="data_nasterii" min="1920-01-01" max="2008-01-01" required>
+                </div>
+                <div>
+                    <label for="telefon">Numar de telefon</label>
+                    <input type="text" id="telefon" name="telefon"  required>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Tell us your opinion about an aesthetic</legend>
+                <div>
+                    <label for="aesthetic">Aesthetic</label>
+                    <select id="aesthetic" name="aesthetic" required>
+                        <option value="">Please choose an option</option>
+                        <option value="grunge">Grunge</option>
+                        <option value="retro">Retro</option>
+                        <option value="cyberpunk">Cyberpunk</option>
+                        <option value="barbie">Barbie</option>
+                    </select>
+                </div>
+                <div class="star">
+                    <label for="rating">Rate this aesthetic</label>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                </div>
+                
+                    <div>
+                        <label for="more">Tell us more</label>
+                        <textarea id="more" name="more" cols="30" rows="4" placeholder="Your thoughts"></textarea>
+                    </div>
+                <div>
+                    <label for="photo">Choose a picture that you think would match the style:</label>
+                    <input type="file" id="photo" name="photo" accept="image/*" required>
+                    
+                </div>
+            </fieldset>
+            <div>
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="errorContainer"></div>
+    </div>
+
+    <%-include('partials/footer') %>
+    <script src="formular.js"></script>
+</body>
+</html>
